@@ -1,6 +1,6 @@
-public class GasolinCar extends AFuelCar {
+public class GasolineCar extends AFuelCar {
 
-    public GasolinCar(String registrationNumber, String make, String model, int numberOfDoors, int kmPrLitre) {
+    public GasolineCar(String registrationNumber, String make, String model, int numberOfDoors, int kmPrLitre) {
         super(registrationNumber, make, model, numberOfDoors, kmPrLitre);
     }
 
@@ -10,7 +10,7 @@ public class GasolinCar extends AFuelCar {
 
     @Override
     public String toString() {
-        return "GasolinCar{" +
+        return "GasolineCar{" +
                 "registrationNumber='" + registrationNumber + '\'' +
                 ", make='" + make + '\'' +
                 ", model='" + model + '\'' +
