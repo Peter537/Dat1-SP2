@@ -1,5 +1,9 @@
 public class GasolinCar extends AFuelCar {
 
+    public GasolinCar(String registrationNumber, String make, String model, int numberOfDoors, int kmPrLitre) {
+        super(registrationNumber, make, model, numberOfDoors, kmPrLitre);
+    }
+
     public int getRegistrationFee() {
         return 0;
     }

@@ -5,6 +5,13 @@ public abstract class ACar implements Car {
     protected String model;
     protected int numberOfDoors;
 
+    public ACar(String registrationNumber, String make, String model, int numberOfDoors) {
+        this.registrationNumber = registrationNumber;
+        this.make = make;
+        this.model = model;
+        this.numberOfDoors = numberOfDoors;
+    }
+
     public String getRegistrationNumber() {
         return registrationNumber;
     }
