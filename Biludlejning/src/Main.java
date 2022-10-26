@@ -11,10 +11,10 @@ public class Main {
         fleetOfCars.addCar(new DieselCar("IJ 90 123", "Volvo", "383", 5, 50, false));
         fleetOfCars.addCar(new DieselCar("KL 12 345", "Toyota", "Land Cruiser", 7, 29, true));
 
-        fleetOfCars.addCar(new ElectricCar("GH 78 901", "Tesla", "Model S", 5, 100, 502));
-        fleetOfCars.addCar(new ElectricCar("IJ 90 123", "Tesla", "Model X", 5, 105, 543));
-        fleetOfCars.addCar(new ElectricCar("KL 12 345", "BMW", "i3", 3, 38, 203));
-
+        fleetOfCars.addCar(new ElectricCar("MN 34 567", "Tesla", "Model S", 5, 100, 502));
+        fleetOfCars.addCar(new ElectricCar("OP 56 789", "Tesla", "Model X", 5, 105, 543));
+        fleetOfCars.addCar(new ElectricCar("QR 78 901", "BMW", "i3", 3, 38, 203));
+        
         System.out.println(fleetOfCars);
         System.out.println("Total registration fee for fleet: " + fleetOfCars.getTotalRegistrationFeeForFleet());
     }
