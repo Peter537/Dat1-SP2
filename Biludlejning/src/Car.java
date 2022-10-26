@@ -1,6 +1,6 @@
 public interface Car {
 
-    String getRegistrationNumber(); //The number on the number plate
+    String getRegistrationNumber(); // The number on the number plate
 
     String getMake(); // The make of the car e.g. Audi
 
