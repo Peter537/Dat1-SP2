@@ -20,7 +20,7 @@ public class ElectricCar extends ACar {
     public int getWhPrKm() {
         return (getBatteryCapacityKWh() * 1000) / getMaxRangeKm();
     }
-    
+
     public int getRegistrationFee() {
         int kmPrLitre = Math.round(100 / (getWhPrKm() / 91.25f));
         if (kmPrLitre < 5) {
