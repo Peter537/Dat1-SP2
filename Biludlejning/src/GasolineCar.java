@@ -4,10 +4,12 @@ public class GasolineCar extends AFuelCar {
         super(registrationNumber, make, model, numberOfDoors, kmPrLitre);
     }
 
+    @Override
     public String getFuelType() {
         return "Gasoline";
     }
 
+    @Override
     public int getRegistrationFee() {
         if (getKmPrLitre() < 5) {
             return 10470;

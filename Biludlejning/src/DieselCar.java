@@ -11,10 +11,12 @@ public class DieselCar extends AFuelCar {
         return particleFilter;
     }
 
+    @Override
     public String getFuelType() {
         return "Diesel";
     }
 
+    @Override
     public int getRegistrationFee() {
         int registrationFee = 0;
 
