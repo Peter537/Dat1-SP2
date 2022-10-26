@@ -4,18 +4,33 @@ public class GasolineCar extends AFuelCar {
         super(registrationNumber, make, model, numberOfDoors, kmPrLitre);
     }
 
+    public String getFuelType() {
+        return "Gasoline";
+    }
+
     public int getRegistrationFee() {
-        return 0;
+        if (getKmPrLitre() < 5) {
+            return 10470;
+        } else if (getKmPrLitre() < 10) {
+            return 5500;
+        } else if (getKmPrLitre() < 15) {
+            return 2340;
+        } else if (getKmPrLitre() < 20) {
+            return 1050;
+        } else {
+            return 330;
+        }
     }
 
     @Override
     public String toString() {
         return "GasolineCar{" +
-                "kmPrLitre=" + kmPrLitre +
-                ", registrationNumber='" + registrationNumber + '\'' +
-                ", make='" + make + '\'' +
-                ", model='" + model + '\'' +
-                ", numberOfDoors=" + numberOfDoors +
+                "kmPrLitre=" + getKmPrLitre() +
+                ", registrationNumber='" + getRegistrationNumber() + '\'' +
+                ", make='" + getMake() + '\'' +
+                ", model='" + getModel() + '\'' +
+                ", numberOfDoors=" + getNumberOfDoors() +
+                ", fuelType=" + getFuelType() +
                 '}';
     }
 }

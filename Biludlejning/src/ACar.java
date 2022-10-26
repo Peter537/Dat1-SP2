@@ -31,10 +31,10 @@ public abstract class ACar implements Car {
     @Override
     public String toString() {
         return "ACar{" +
-                "registrationNumber='" + registrationNumber + '\'' +
-                ", make='" + make + '\'' +
-                ", model='" + model + '\'' +
-                ", numberOfDoors=" + numberOfDoors +
+                "registrationNumber='" + getRegistrationNumber() + '\'' +
+                ", make='" + getMake() + '\'' +
+                ", model='" + getModel() + '\'' +
+                ", numberOfDoors=" + getNumberOfDoors() +
                 '}';
     }
 }

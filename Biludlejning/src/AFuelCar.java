@@ -7,9 +7,7 @@ public abstract class AFuelCar extends ACar {
         this.kmPrLitre = kmPrLitre;
     }
 
-    public String getFuelType() {
-        return "";
-    }
+    public abstract String getFuelType();
 
     public int getKmPrLitre() {
         return kmPrLitre;
@@ -18,11 +16,12 @@ public abstract class AFuelCar extends ACar {
     @Override
     public String toString() {
         return "AFuelCar{" +
-                "kmPrLitre=" + kmPrLitre +
-                ", registrationNumber='" + registrationNumber + '\'' +
-                ", make='" + make + '\'' +
-                ", model='" + model + '\'' +
-                ", numberOfDoors=" + numberOfDoors +
+                "kmPrLitre=" + getKmPrLitre() +
+                ", registrationNumber='" + getRegistrationNumber() + '\'' +
+                ", make='" + getMake() + '\'' +
+                ", model='" + getModel() + '\'' +
+                ", numberOfDoors=" + getNumberOfDoors() +
+                ", fuelType=" + getFuelType() +
                 '}';
     }
 }
