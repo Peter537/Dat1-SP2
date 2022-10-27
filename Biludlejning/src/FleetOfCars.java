@@ -11,7 +11,11 @@ public class FleetOfCars {
     }
 
     public int getTotalRegistrationFeeForFleet() {
-        return cars.stream().mapToInt(Car::getRegistrationFee).sum();
+        int totalRegistrationFee = 0;
+        for (Car car : cars) {
+            totalRegistrationFee += car.getRegistrationFee();
+        }
+        return totalRegistrationFee;
     }
 
     @Override
