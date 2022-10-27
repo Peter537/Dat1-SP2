@@ -15,7 +15,13 @@ public class Main {
         fleetOfCars.addCar(new ElectricCar("OP 56 789", "Tesla", "Model X", 5, 105, 543));
         fleetOfCars.addCar(new ElectricCar("QR 78 901", "BMW", "i3", 3, 38, 203));
 
+        System.out.println("**************************************");
+        System.out.println("Fleet of cars:\n");
         System.out.println(fleetOfCars);
-        System.out.println("Total registration fee for fleet: " + fleetOfCars.getTotalRegistrationFeeForFleet());
+        System.out.println("**************************************");
+        System.out.println();
+        System.out.println("**************************************");
+        System.out.println("Total registration fee for fleet: " + fleetOfCars.getTotalRegistrationFeeForFleet() + " kr.");
+        System.out.println("**************************************");
     }
 }

@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.stream.Collectors;
 
 public class FleetOfCars {
 
@@ -16,8 +17,10 @@ public class FleetOfCars {
 
     @Override
     public String toString() {
-        return "FleetOfCars{" +
-                "cars=" + cars +
-                '}';
+        StringBuilder sb = new StringBuilder();
+        for (Car car : cars) {
+            sb.append(car).append("\n");
+        }
+        return sb.toString();
     }
 }

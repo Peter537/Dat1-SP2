@@ -1,12 +1,17 @@
 public interface Car {
 
-    String getRegistrationNumber(); // The number on the number plate
+    // The number on the number plate
+    String getRegistrationNumber();
 
-    String getMake(); // The make of the car e.g. Audi
+    // The make of the car e.g. Audi
+    String getMake();
 
-    String getModel(); // The model of the car e.g. A6
+    // The model of the car e.g. A6
+    String getModel();
 
-    int getNumberOfDoors(); // The number of doors
+    // The number of doors
+    int getNumberOfDoors();
 
-    int getRegistrationFee(); // Calculates the registration fee for the car
+    // Calculates the registration fee for the car
+    int getRegistrationFee();
 }
